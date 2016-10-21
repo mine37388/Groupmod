@@ -1,0 +1,15 @@
+#!/bin/bash
+
+while getopts ":g:r:" arg;
+do
+	usr=$OPTARG
+	case $arg in
+		g)
+			
+			usermod -a -G grantSSHGroup $usr
+			;;
+		r)
+			usermod -a -G denySSHGroup $usr
+			;;
+		esac
+done
