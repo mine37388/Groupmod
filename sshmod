@@ -9,6 +9,7 @@ do
 			usermod -a -G grantSSHGroup $usr
 			;;
 		r)
+			gpasswd -d $usr grantSSHGroup
 			usermod -a -G denySSHGroup $usr
 			;;
 		esac
