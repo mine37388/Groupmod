@@ -1,5 +1,5 @@
-# SSHmod
-Basic script to change a user's group to grant or revoke SSH access
+# Usermod
+Script to change a user's group to grant or revoke SSH access
 
 ##Usage
 
